@@ -2,9 +2,9 @@
   "name": "nextjs-antd-ts",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start -p 8080",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && next start -p 8080",
     "lint": "eslint . --ext ts,tsx",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write ."
